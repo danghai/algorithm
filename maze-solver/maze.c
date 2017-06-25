@@ -1,3 +1,8 @@
+/*
+ Name: Hai Dang Hoang
+ Email: goldsea5191@gmail.com
+ Maze solver
+*/
 #include <stdio.h>
 #include <errno.h>
 #include <stdlib.h>
