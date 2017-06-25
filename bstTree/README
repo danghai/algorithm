@@ -1,0 +1,29 @@
+Source code of the C++ Program to demonstrate Binary Search Tree:
+
+1.Insert element into the BST"<<endl;
+2.Search element from the BST"<<endl;
+3.Delete element at a BST"<<endl;
+4.Display all element in the BST following traversal"<<endl;
+5.Remove the maximum value in the BST" << endl;
+6.Total element in BST" << endl;
+7.Display BST following tree form" << endl;
+8.Others " <<endl;
+
+OTHERS include:
+1.Count left node of BST: " << endl;
+2.Count empty branches in BST: " << endl;
+3.Count depth sum of BST: " << endl;
+4.Count even branches in BST" << endl;
+5.Print the value at level in BST" << endl;
+6.Print the leaves in a BST from right to left" <<endl;
+7.Check BST is full or not: " <<endl;
+8.Double all data values greater than 0 in BST " <<endl;
+9.Changes data following number node (pre-order)" <<endl;
+10.Remove the leaves from BST " <<endl;
+11.Complete to level the BST" <<endl;
+12.Trim BST " <<endl;
+13.Eliminates branch nodes that have only one child " <<endl;
+
+Makefile:
+make
+./main
