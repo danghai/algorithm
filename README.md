@@ -17,6 +17,6 @@ hash table and others projects.
 
 2. crc-asm: (Implement crc check by C and Intel-x86 assembly): [crc](https://github.com/danghai/C-projects-and-Data-Structure/tree/master/crc-asm)
 # Reference books: 
-1. Data Structure Using C++: [C++ Data structure](https://github.com/danghai/C-projects-and-Data-Structure/tree/master/reference)
+1. Data Structure Using C++: [C++ Data structure](https://github.com/danghai/C-projects-and-Data-Structure/tree/master/reference/Data%20Structure)
 
-2. UNIX Programming: [UNIX programming](https://github.com/danghai/C-projects-and-Data-Structure/tree/master/reference)
+2. UNIX Programming: [UNIX programming](https://github.com/danghai/C-projects-and-Data-Structure/tree/master/reference/UNIX%20Program)
