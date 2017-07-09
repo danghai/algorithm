@@ -14,6 +14,9 @@ hash table and others projects.
 # C project and UNIX Program 
 
 1. Maze Solver: [Maze Solver](https://github.com/danghai/C-projects-and-Data-Structure/tree/master/maze-solver)
+
+2. crc-asm: (Implement crc check by C and Intel-x86 assembly): [crc](https://github.com/danghai/C-projects-and-Data-Structure/tree/master/crc-asm)
 # Reference books: 
-[C++ Data structure](https://github.com/danghai/C-projects-and-Data-Structure/tree/master/reference)
-[UNIX program](https://github.com/danghai/C-projects-and-Data-Structure/tree/master/reference)
+1. Data Structure Using C++: [C++ Data structure](https://github.com/danghai/C-projects-and-Data-Structure/tree/master/reference)
+
+2. UNIX Programming: [UNIX programming](https://github.com/danghai/C-projects-and-Data-Structure/tree/master/reference)
