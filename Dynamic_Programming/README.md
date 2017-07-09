@@ -9,19 +9,20 @@ the previously calculated solutions are used, thereby saving computation time at
 the expense of storage space.
 
 Dynamic programming can be implemented in two ways
+
 	* Memoization
 	* Tabulation
 
-1. Memoization: Memoization uses the top-down technique to solve the problem. 
+1. `Memoization`: Memoization uses the top-down technique to solve the problem. 
 It begin with original problem then breaks it into sub-problems and solve these
 sub-problems in the same way. 
 
-In this approach, you assume that you have alread computed all subproblems. You
+	In this approach, you assume that you have alread computed all subproblems. You
 typically perform a recursive call (or some iterative equivalent) from the main problem.
 You ensure that the recursive call never recomputes a subproblem because you cache 
 the results, and thus duplicate sub-problem are not recomputed.
 
-2. Tabulation: Tabulation is the typical Dynamic Programming approach. Tabulation uses
+2. `Tabulation`: Tabulation is the typical Dynamic Programming approach. Tabulation uses
 the bottom up approach to solve the problem by solving all related sub-problem first, 
 typically by storing the results in an array. Based on the results stored in the array,
 the solution to the `top` original problem is then computed.
@@ -38,7 +39,7 @@ subproblems to reach an overall solution
 The problems that can be solved by usiing Dynamic Programming has the following two main
 properties
 
-1. Overlapping sub-problems
+1. `Overlapping sub-problems`
 
 Overlapping subproblems is a property in which a problem can be broken down into subproblems
 which are used multiple times.
@@ -49,7 +50,7 @@ that these do not have to recomputed. So Dynamic Programming is no useful when t
 overlapping subproblems because there is no point storing the solutions if they are not 
 needed again
 
-2. Optimal Substructure
+2. `Optimal Substructure`
 
 Optimal substructure is a property in which an optimal solution of the original problem
 can be constructed efficiently from the optimal solutions of its sub-problems

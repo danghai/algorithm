@@ -11,6 +11,8 @@ hash table and others projects.
 
 4. Binary Search Tree: [Binary Search Tree](https://github.com/danghai/C-projects-and-Data-Structure/tree/master/bstTree)
 
+# Dynamic Programming: [Dynamic Programming](https://github.com/danghai/C-projects-and-Data-Structure/tree/master/Dynamic_Programming)
+
 # C project and UNIX Program 
 
 1. Maze Solver: [Maze Solver](https://github.com/danghai/C-projects-and-Data-Structure/tree/master/maze-solver)
