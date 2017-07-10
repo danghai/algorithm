@@ -1,4 +1,4 @@
-# Data Structures and Algorithm 
+# Data Structures and Algorithm: 
 C/C++ projects relate to concept of data abstraction and implementations of abstract data types. 
 The major structures include lists of several types, linear linked list, double linked list, stacks, queues, trees, binary search trees, 
 hash table and others projects.  
@@ -13,7 +13,9 @@ hash table and others projects.
 
 # Dynamic Programming: [Dynamic Programming](https://github.com/danghai/C-projects-and-Data-Structure/tree/master/Dynamic_Programming)
 
-# C project and UNIX Program 
+[Dynamic Programming](https://github.com/danghai/C-projects-and-Data-Structure/tree/master/Dynamic_Programming)
+
+# C project and UNIX Program: 
 
 1. Maze Solver: [Maze Solver](https://github.com/danghai/C-projects-and-Data-Structure/tree/master/maze-solver)
 
