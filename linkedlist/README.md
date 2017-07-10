@@ -22,3 +22,5 @@
 ### LinkedList problems:
 
 1. removeKFromList: [removeKFromList](https://github.com/danghai/C-projects-and-Data-Structure/blob/master/linkedlist/removeKFromList/removeKFromList.md)
+
+2. mergeTwoLists: [mergeTwoLists]((https://github.com/danghai/C-projects-and-Data-Structure/blob/master/linkedlist/removeKFromList/mergeTwoLists.md))
