@@ -18,3 +18,7 @@
 1. Implement ShuffleMerge by 2 methods (Normal traversal and Recursive)
 2. Implement insertSort (increasing order)
 3. Implement SortedMerge by using insertSort by 2 methods (Normal traversal and Recursive)
+
+### LinkedList problems:
+
+1. removeKFromList: [removeKFromList](https://github.com/danghai/C-projects-and-Data-Structure/blob/master/linkedlist/removeKFromList/removeKFromList.md)
