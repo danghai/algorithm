@@ -45,4 +45,5 @@ Return `l` with all the values equal to k removed.
 Solution: 
 
 [1st way](https://github.com/danghai/C-projects-and-Data-Structure/blob/master/linkedlist/removeKFromList/first.cpp)
-[2nd way](https://github.com/danghai/C-projects-and-Data-Structure/blob/master/linkedlist/removeKFromList/first.cpp)
+
+[2nd way](https://github.com/danghai/C-projects-and-Data-Structure/blob/master/linkedlist/removeKFromList/second.cpp)
