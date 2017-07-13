@@ -7,6 +7,8 @@ hash table and others projects.
 
 2. Double LinkedList: [Double Linkedlist](https://github.com/danghai/C-projects-and-Data-Structure/tree/master/double-linkedlist)
 
+3. Stack: [Stack](https://github.com/danghai/C-projects-and-Data-Structure/tree/master/stack)
+
 3. HashTable: [HashTable](https://github.com/danghai/C-projects-and-Data-Structure/tree/master/hashTable)
 
 4. Binary Search Tree: [Binary Search Tree](https://github.com/danghai/C-projects-and-Data-Structure/tree/master/bstTree)
