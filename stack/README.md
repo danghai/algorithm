@@ -1,6 +1,6 @@
 # Source code of the C++ Program to demonstrate Stack implemented by linkedlist
 
-Implement basic method of a stack
+### Implement basic method of a stack
 
 1. push
 2. pop
@@ -14,6 +14,6 @@ Implement basic method of a stack
 10. findmin
 11. mirror
 
-Explain method: 
+Explain method:[stack.docx](https://github.com/danghai/C-projects-and-Data-Structure/blob/master/stack/stack.docx)
 
 ### Stack problems:
