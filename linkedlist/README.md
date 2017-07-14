@@ -19,8 +19,13 @@
 2. Implement insertSort (increasing order)
 3. Implement SortedMerge by using insertSort by 2 methods (Normal traversal and Recursive)
 
-### LinkedList problems:
+### LinkedList problems: 
 
-1. removeKFromList: [removeKFromList](https://github.com/danghai/C-projects-and-Data-Structure/blob/master/linkedlist/removeKFromList/removeKFromList.md)
+| # | Title | Solution | Difficulty |
+| --- | --- | --- | --- |
+| 1 | [mergeTwoLists](https://leetcode.com/problems/merge-two-sorted-lists/#/description) | [C++](https://github.com/danghai/C-projects-and-Data-Structure/blob/master/linkedlist/removeKFromList/mergeTwoLists.md) | Easy |
+| 2 | [mergeTwoLists](https://leetcode.com/problems/merge-two-sorted-lists/#/description) | [C++](https://github.com/danghai/C-projects-and-Data-Structure/blob/master/linkedlist/removeKFromList/mergeTwoLists.md) | Easy |
 
-2. mergeTwoLists: [mergeTwoLists](https://github.com/danghai/C-projects-and-Data-Structure/blob/master/linkedlist/removeKFromList/mergeTwoLists.md)
+
+
+
