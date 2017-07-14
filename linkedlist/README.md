@@ -24,7 +24,10 @@
 | # | Title | Solution | Difficulty |
 | --- | --- | --- | --- |
 | 1 | [mergeTwoLists](https://leetcode.com/problems/merge-two-sorted-lists/#/description) | [C++](https://github.com/danghai/C-projects-and-Data-Structure/blob/master/linkedlist/removeKFromList/mergeTwoLists.md) | Easy |
-| 2 | [mergeTwoLists](https://leetcode.com/problems/merge-two-sorted-lists/#/description) | [C++](https://github.com/danghai/C-projects-and-Data-Structure/blob/master/linkedlist/removeKFromList/mergeTwoLists.md) | Easy |
+| 2 | [Remove Nth Node From End of List](https://leetcode.com/problems/remove-nth-node-from-end-of-list/#/description) | [C++](https://github.com/danghai/C-projects-and-Data-Structure/blob/master/linkedlist/removeKFromList/mergeTwoLists.md) | Medium |
+| 3 | [Remove Duplicates from Sorted List ](https://leetcode.com/problems/remove-duplicates-from-sorted-list/#/description) | [C++](https://github.com/danghai/C-projects-and-Data-Structure/blob/master/linkedlist/removeKFromList/mergeTwoLists.md) | Easy |
+| 4 | [Remove Linked List Elements](https://leetcode.com/problems/remove-linked-list-elements/#/description) | [C++](https://github.com/danghai/C-projects-and-Data-Structure/blob/master/linkedlist/removeKFromList/mergeTwoLists.md) | Easy |
+| 5 | [Reverse Linked List ](https://leetcode.com/problems/reverse-linked-list/#/description) | [C++](https://github.com/danghai/C-projects-and-Data-Structure/blob/master/linkedlist/removeKFromList/mergeTwoLists.md) | Easy |
 
 
 
