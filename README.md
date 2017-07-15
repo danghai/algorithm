@@ -19,7 +19,10 @@ hash table and others projects.
 
 # C project and UNIX Program: 
 
-1. Maze Solver: [Maze Solver](https://github.com/danghai/C-projects-and-Data-Structure/tree/master/maze-solver)
+1. [File I/O Linux interface](https://github.com/danghai/C-projects-and-Data-Structure/tree/master/linux-programming-interface/file-IO)
 
-2. crc-asm: (Implement crc check by C and Intel-x86 assembly): [crc](https://github.com/danghai/C-projects-and-Data-Structure/tree/master/crc-asm)
+2. [Maze Solver](https://github.com/danghai/C-projects-and-Data-Structure/tree/master/maze-solver)
+
+3. [crc-asm](https://github.com/danghai/C-projects-and-Data-Structure/tree/master/crc-asm)
+
 
