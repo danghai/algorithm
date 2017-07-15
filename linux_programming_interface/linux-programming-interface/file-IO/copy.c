@@ -3,7 +3,7 @@
   Email: goldsea5191@gmail.com
   Using I/O system calls to implemnt copy file
 
-  This program is a siimple version of the cp(1) command.
+  This program is a simple version of the cp(1) command.
   It copies the contents of the existing file named in its
   first command-line argument to the new file named in its second
   command-line argument
