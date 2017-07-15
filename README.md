@@ -3,15 +3,15 @@ C/C++ projects relate to concept of data abstraction and implementations of abst
 The major structures include lists of several types, linear linked list, double linked list, stacks, queues, trees, binary search trees, 
 hash table and others projects.  
 
-1. LinkedList: [LinkedList](https://github.com/danghai/C-projects-and-Data-Structure/tree/master/linkedlist)
+1. [LinkedList](https://github.com/danghai/C-projects-and-Data-Structure/tree/master/linkedlist)
 
-2. Double LinkedList: [Double Linkedlist](https://github.com/danghai/C-projects-and-Data-Structure/tree/master/double-linkedlist)
+2. [Double Linkedlist](https://github.com/danghai/C-projects-and-Data-Structure/tree/master/double-linkedlist)
 
-3. Stack: [Stack](https://github.com/danghai/C-projects-and-Data-Structure/tree/master/stack)
+3. [Stack](https://github.com/danghai/C-projects-and-Data-Structure/tree/master/stack)
 
-3. HashTable: [HashTable](https://github.com/danghai/C-projects-and-Data-Structure/tree/master/hashTable)
+3. [HashTable](https://github.com/danghai/C-projects-and-Data-Structure/tree/master/hashTable)
 
-4. Binary Search Tree: [Binary Search Tree](https://github.com/danghai/C-projects-and-Data-Structure/tree/master/bstTree)
+4. [Binary Search Tree](https://github.com/danghai/C-projects-and-Data-Structure/tree/master/bstTree)
 
 # Dynamic Programming:
 
