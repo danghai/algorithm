@@ -19,7 +19,7 @@ hash table and others projects.
 
 # C project and UNIX Program: 
 
-1. [File I/O Linux interface](https://github.com/danghai/C-projects-and-Data-Structure/tree/master/linux-programming-interface/file-IO)
+1. [File I/O Linux interface](https://github.com/danghai/C-projects-and-Data-Structure/tree/master/linux_programming_interface/file-IO)
 
 2. [Maze Solver](https://github.com/danghai/C-projects-and-Data-Structure/tree/master/maze-solver)
 
