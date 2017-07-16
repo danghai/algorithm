@@ -25,6 +25,7 @@ int main (int argc, char * argv[])
   ssize_t numRead, numWritten;
   size_t len;
   off_t offset;
+  char *buf;
 
 
   /*Check argument */
@@ -42,22 +43,74 @@ int main (int argc, char * argv[])
         perror("Cannot open the file");
         return -1;
     }
-/*
+
     for (argument = 2; argument < argc; argument++)
     {
       switch(argv[argument][0])
       {
         case 'r':     /* Display bytes at current offset, as text */
-      //  case 'R':     /* Display bytes at current offset, in hex */
-//      }
-//    }
+        case 'R':     /* Display bytes at current offset, in hex */
+          //  Convert a numeric command-line argument string to a long integer.
+          len = getLong(&argv[argument][1],GN_ANY_BASE, argv[argument]);
+          buf = malloc(len);
+          if (buf == NULL)
+          {
+            perror ("Error memory allocation \n");
+            return -1;
+          }
+          /* Read the file*/
+          numRead = read(fd,buf,len);
+          if(numRead == -1)
+          {
+            perror ("Cannot read the file");
+            return -1;
+          }
 
+          if(numRead == 0)
+            printf("%s: end of file \n", argv[argument]);
+          else
+          {
+            printf("%s: ", argv[argument]);
+            for(int j = 0 ;j < numRead; j++)
+            {
+              if(argv[argument][0] == 'r')    // Case r --> print text format
+                printf("%c ", isprint((unsigned char) buf[j]) ? buf[j]: '?');
+              else                      // print hex format
+                printf("%02x ", (unsigned int) buf[j]);
+            }
+            printf("\n");
+          }
+          free(buf);
+          break;
 
+          /* Write string at current offset*/
+          case 'w':
+            numWritten = write(fd, &argv[argument][1], strlen(&argv[argument][1]));
+            if(numWritten == -1)
+            {
+              perror ("Cannot write ");
+              return -1;
+            }
+            else
+              printf("%s: wrote %ld bytes \n",argv[argument],(long) numWritten);
+            break;
 
+          /* Change file offset */
+          case 's':
+            offset = getLong(&argv[argument][1],GN_ANY_BASE, argv[argument]);
+            if(lseek(fd,offset,SEEK_SET)== -1)
+            {
+              perror ("Error lseek");
+              return -1;
+            }
+            printf("%s: seek succeeded \n", argv[argument]);
+            break;
 
-
-
-
+            /* Default case*/
+          default:
+            printf("Argument must start with [rRws] \n");
+      }
+   }   // End Switch
 
       exit(EXIT_SUCCESS);
-    }
+} // End main
