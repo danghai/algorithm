@@ -1,10 +1,11 @@
 CC = gcc
 FLAG = -o
 
-all: copy
+all: copy seek_io
 
 copy: copy.c
 	$(CC) $(FLAG) copy copy.c
-
-clean: 
-	rm -f copy
+seek_io: seek_io.c
+	$(CC) $(FLAG) seek_io seek_io.c
+clean:
+	rm *o copy 
