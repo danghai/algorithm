@@ -10,7 +10,7 @@ command-line argument
 
 Example run:
 
-```js
+```sh
 danghai@ubuntu:~$ make
 gcc -o copy copy.c
 danghai@ubuntu:~$ ./copy test.txt test1.txt
@@ -36,7 +36,7 @@ display them in hexadecimal form
 
 Example run:
 
-```js
+```sh
 danghai@ubuntu:~$ touch tFile				==> Create new empty file	
 danghai@ubuntu:~$ ./seek_io tFile s100 wdanghai		==> Seek to offset 100, write "danghai"	
 s100: seek succeeded 
