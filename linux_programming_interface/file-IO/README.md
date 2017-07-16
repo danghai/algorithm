@@ -10,7 +10,7 @@ command-line argument
 
 Example run:
 
-```
+```js
 danghai@ubuntu:~$ make
 gcc -o copy copy.c
 danghai@ubuntu:~$ ./copy test.txt test1.txt
@@ -36,25 +36,25 @@ display them in hexadecimal form
 
 Example run:
 
-```
-danghai@ubuntu:~$ touch tFile				`Create new empty file`	
-danghai@ubuntu:~$ ./seek_io tFile s100 wdanghai		`Seek to offset 100, write "danghai"`	
+```js
+danghai@ubuntu:~$ touch tFile				==> Create new empty file	
+danghai@ubuntu:~$ ./seek_io tFile s100 wdanghai		==> Seek to offset 100, write "danghai"	
 s100: seek succeeded 
 wdanghai: wrote 7 bytes 
-danghai@ubuntu:~$ ./seek_io tFile s150 wEmail:danghai@pdx.edu `Seek to offset 15, write "Email:danghai@pdx.edu"`
+danghai@ubuntu:~$ ./seek_io tFile s150 wEmail:danghai@pdx.edu ==> Seek to offset 15, write "Email:danghai@pdx.edu
 s150: seek succeeded 
 wEmail:danghai@pdx.edu: wrote 21 bytes 
 danghai@ubuntu:~$ ls -l tFile
--rw-rw-r-- 1 danghai danghai 171 Jul 16 15:41 tFile	`Check size of file`
-danghai@ubuntu:~$ ./seek_io tFile s100 R20		`Seek to offset 100, read 20 bytes under hexa format`
+-rw-rw-r-- 1 danghai danghai 171 Jul 16 15:41 tFile	==> Check size of file
+danghai@ubuntu:~$ ./seek_io tFile s100 R20		==> Seek to offset 100, read 20 bytes under hexa format
 s100: seek succeeded 
 R20: 64 61 6e 67 68 61 69 00 00 00 00 00 00 00 00 00 00 00 00 00 
-danghai@ubuntu:~$ ./seek_io tFile s100 r20		`Seek to offset 100, read 20 bytesunder text format`
+danghai@ubuntu:~$ ./seek_io tFile s100 r20		==>  Seek to offset 100, read 20 bytesunder text format
 s100: seek succeeded 
 r20: d a n g h a i ? ? ? ? ? ? ? ? ? ? ? ? ? 
 danghai@ubuntu:~$ ./seek_io tFile s150 r30
 s150: seek succeeded 
-r30: E m a i l : d a n g h a i @ p d x . e d u 		`Seek to offset 100, read 30 bytes under text format`
+r30: E m a i l : d a n g h a i @ p d x . e d u 		==> Seek to offset 100, read 30 bytes under text format
 danghai@ubuntu:~/C-projects-and-Data-Structure/linux_programming_interface/file-IO$ 
 ```
 
