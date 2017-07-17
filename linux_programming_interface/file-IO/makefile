@@ -16,4 +16,4 @@ tee: tee.c
 	$(CC) $(FLAG) tee tee.c
 
 clean:
-	rm *o copy
+	rm *o copy tee

@@ -1,7 +1,7 @@
 # I/O interface UNIX
 
 
-### 1. Copy.c
+### 1. [Copy.c](https://github.com/danghai/C-projects-and-Data-Structure/blob/master/linux_programming_interface/file-IO/copy.c)
 
 This program is a simple version of the cp(1) command.
 It copies the contents of the existing file named in its
@@ -20,7 +20,7 @@ Email: goldsea5191@gmail.com
 This file is created for testing copy the file.
 ```
 
-### 2. Seek_io.c
+### 2. [Seek_io.c](https://github.com/danghai/C-projects-and-Data-Structure/blob/master/linux_programming_interface/file-IO/seek_io.c)
 
 This program demonstrates the use of lseek() in conjunction with read() and write()
 THe first command-line argument to this program is the name of a file to be opened.
@@ -49,11 +49,21 @@ danghai@ubuntu:~$ ls -l tFile
 danghai@ubuntu:~$ ./seek_io tFile s100 R20		==> Seek to offset 100, read 20 bytes under hexa format
 s100: seek succeeded
 R20: 64 61 6e 67 68 61 69 00 00 00 00 00 00 00 00 00 00 00 00 00
-danghai@ubuntu:~$ ./seek_io tFile s100 r20		==>  Seek to offset 100, read 20 bytesunder text format
+danghai@ubuntu:~$ ./seek_io tFile s100 r20		==>  Seek to offset 100, read 20 bytes sunder text format
 s100: seek succeeded
 r20: d a n g h a i ? ? ? ? ? ? ? ? ? ? ? ? ? 
 danghai@ubuntu:~$ ./seek_io tFile s150 r30		==> Seek to offset 100, read 30 bytes under text format
 s150: seek succeeded
 r30: E m a i l : d a n g h a i @ p d x . e d u 		
-danghai@ubuntu:~/C-projects-and-Data-Structure/linux_programming_interface/file-IO$
+
 ```
+
+### 3. [Tee.c](https://github.com/danghai/C-projects-and-Data-Structure/blob/master/linux_programming_interface/file-IO/tee.c)
+
+The tee command reads its standard input until end-of-file, writing a copy
+of the input to standard output and to the file named in its command-line
+argument. By default, tee overwrites any existing file with the given name.
+Implement the -a command-line option (tee -a file),  which causes
+tee to append text to the end of a file if it already exists.
+
+
