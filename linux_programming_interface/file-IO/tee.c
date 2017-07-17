@@ -100,5 +100,6 @@ int main (int argc, char * argv[])
     }
   } // end while
 
+  close(fd);
   exit(EXIT_SUCCESS);
 }

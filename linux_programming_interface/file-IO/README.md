@@ -66,4 +66,34 @@ argument. By default, tee overwrites any existing file with the given name.
 Implement the -a command-line option (tee -a file),  which causes
 tee to append text to the end of a file if it already exists.
 
+### 4. [Atomic_append](https://github.com/danghai/C-projects-and-Data-Structure/blob/master/linux_programming_interface/file-IO/atomic_append.c)
+
+This program is designed to demonstrate why the atomicity guaranteed
+by opening a file with the O_APPEND flag is necessary. Write a program
+that takes up to three command-line arguments:
+
+```
+	$ ./atomic_append <filename> <num-bytes> [x]
+```
+
+This program should open the specified filename (creating it if necessary)
+and append num-bytes to the file by using write() to write a byte at a time.
+By default, the program should open the file with the O_APPEND flag, but if a
+third command-line argument (x) is supplied, O_APPEND flag should be omitted,
+and instead, the program should perform and lseek(fd, 0, SEEK_END) call before
+each write(). Run two instances of this program at the same time without the x
+argument to write 1 million bytes to the same file:
+
+```
+	$ ./atomic_append f1 10000000 & ./atomic_append f1 10000000
+```
+Repeat the same steps, writing to a different file, but this time specifying the x argument:
+
+```
+	$ atomic_append f2 10000000 x & ./atomic_append f2 10000000 x
+```
+
+Result: f2 was run without O_APPEND. f2 has less number of bytes, as well as number of
+time than f1. Because its seeking to the end of the file do not take place at the same time as the write
+
 
