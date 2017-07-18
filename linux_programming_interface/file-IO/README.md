@@ -110,8 +110,8 @@ descriptor for the new descriptor.
 	+ If oldfd is not a valid file descriptor, then the call fails, and
 	newfd is not closed
 
-        + If oldfd is a valid file descriptor, and newfd has sthe same value
-        as oldfd, then dup2() does nothing, and returns newfd.
+	+ If oldfd is a valid file descriptor, and newfd has sthe same value
+	as oldfd, then dup2() does nothing, and returns newfd.
 
 After a successful return from one of these system calls, the old and new file
 descriptors may be used together because they refer to the same open file description
