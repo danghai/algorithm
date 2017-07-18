@@ -2,7 +2,7 @@ CC = gcc
 FLAG = -o
 CFLAG = -c
 
-all: copy seek_io tee atomic_append
+all: copy seek_io tee atomic_append dup
 
 copy: copy.c
 	$(CC) $(FLAG) copy copy.c
@@ -18,5 +18,8 @@ tee: tee.c
 atomic_append: atomic_append.c
 	$(CC) $(FLAG) atomic_append atomic_append.c
 
+dup: dup.c
+	$(CC) $(FLAG) dup dup.c
+
 clean:
-	rm *o copy tee atomic_append
+	rm *o copy tee atomic_append  dup

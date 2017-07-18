@@ -90,10 +90,39 @@ argument to write 1 million bytes to the same file:
 Repeat the same steps, writing to a different file, but this time specifying the x argument:
 
 ```
-	$ atomic_append f2 10000000 x & ./atomic_append f2 10000000 x
+	$ ./atomic_append f2 10000000 x & ./atomic_append f2 10000000 x
 ```
 
 Result: f2 was run without O_APPEND. f2 has less number of bytes, as well as number of
 time than f1. Because its seeking to the end of the file do not take place at the same time as the write
+
+### 5. [My_dup](https://github.com/danghai/C-projects-and-Data-Structure/blob/master/linux_programming_interface/file-IO/dup.c)
+
+dup.c: Implement dup(), dup2() using fcntl().
+
+`main`: Use for testing my_dup function by sharing between fd1, fd2, fd3, fd4
+
+`my_dup()`: According to dup (man 2 dup), it uses the lowest-numbered unused
+descriptor for the new descriptor.
+
+`my_dup2()`: makes newfd be the copy of oldfd, closing newfd first
+
+	+ If oldfd is not a valid file descriptor, then the call fails, and
+	newfd is not closed
+
+        + If oldfd is a valid file descriptor, and newfd has sthe same value
+        as oldfd, then dup2() does nothing, and returns newfd.
+
+After a successful return from one of these system calls, the old and new file
+descriptors may be used together because they refer to the same open file description
+Therefore, they share file offset and file status flags; for example, if the file
+offset is modified by using lseek() on one of the descriptors, the offset is also changed
+for the other.
+
+```
+	$ ./dup <filename>                --> Only test my_dup
+	$ ./dup <filename1> <filename2>   --> Test my_dup() and my_dup2()
+```
+
 
 
