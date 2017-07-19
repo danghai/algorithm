@@ -1,3 +1,15 @@
+/*
+    Name: Hai Dang Hoang
+    Email: goldsea5191@gmail.com
+
+    multi_wait.c: program demonstrates the use of wait(). This program
+    creates multiple child processes, one per command-line argument.
+    Each child sleeps for the number of second specified in the
+    corresponding command-line argument and then exits. In the meantime,
+    after all children have been created, the parent process repeatedly calls
+    wait() to monitor the termination of its children. This loop continues until
+    wait() returns -1.
+*/
 #include <sys/stat.h>
 #include <fcntl.h>
 #include <stdlib.h>
