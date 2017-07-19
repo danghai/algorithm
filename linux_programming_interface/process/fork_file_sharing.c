@@ -6,7 +6,7 @@
     a child process. The child changes the file offset and status flags of the
     file, and exits. The parent then retrieves the file offset and flags to verify
     that it can see the changes made by the child.
-    
+
 */
 #include <sys/stat.h>
 #include <fcntl.h>
