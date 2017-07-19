@@ -5,7 +5,8 @@
     fork_file_sharing.c: Program opens a file, and then call fork() to create
     a child process. The child changes the file offset and status flags of the
     file, and exits. The parent then retrieves the file offset and flags to verify
-    that it can see the changes made by the child. 
+    that it can see the changes made by the child.
+    
 */
 #include <sys/stat.h>
 #include <fcntl.h>
@@ -32,9 +33,9 @@ int main(int argc, char *argv[])
   }
 
   /* Set the mode and flag for fd before fork() */
-  flag = O_WRONLY | O_CREAT ; // No O_APPEND flag
+  flag = O_WRONLY | O_CREAT ;                            // No O_APPEND flag
   mode = S_IRUSR | S_IWUSR | S_IRGRP | S_IWGRP | S_IROTH | S_IWOTH; /* rw-rw-rw*/
-  if((fd = open(argv[1],flag,mode) == -1))
+  if((fd = open(argv[1],flag,mode)) == -1)
   {
     perror ("Error open \n");
     exit (EXIT_FAILURE);
@@ -56,7 +57,7 @@ int main(int argc, char *argv[])
     case 0:  // Child process: Change file offset and status flag
       if(lseek(fd,100,SEEK_SET) == -1)        // Move fd to 100 bytes
       {
-        perror("Error lseek -100 \n");
+        perror("Error lseek SEEK_SET -100 \n");
         exit(EXIT_FAILURE);
       }
 
@@ -75,7 +76,7 @@ int main(int argc, char *argv[])
         exit(EXIT_FAILURE);
       }
       printf("---------------------------------------- Child is exited \n");
-      printf("File offset after fork(): %lld\n",(long long) lseek(fd,1,SEEK_CUR));
+      printf("File offset after fork(): %lld\n",(long long) lseek(fd,0,SEEK_CUR));
 
       if((flag = fcntl(fd, F_GETFL))== -1)
       {
