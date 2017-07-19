@@ -66,7 +66,7 @@ argument. By default, tee overwrites any existing file with the given name.
 Implement the -a command-line option (tee -a file),  which causes
 tee to append text to the end of a file if it already exists.
 
-### 4. [Atomic_append](https://github.com/danghai/C-projects-and-Data-Structure/blob/master/linux_programming_interface/file-IO/atomic_append.c)
+### 4. [Atomic_append.c](https://github.com/danghai/C-projects-and-Data-Structure/blob/master/linux_programming_interface/file-IO/atomic_append.c)
 
 This program is designed to demonstrate why the atomicity guaranteed
 by opening a file with the O_APPEND flag is necessary. Write a program
@@ -96,7 +96,7 @@ Repeat the same steps, writing to a different file, but this time specifying the
 Result: f2 was run without O_APPEND. f2 has less number of bytes, as well as number of
 time than f1. Because its seeking to the end of the file do not take place at the same time as the write
 
-### 5. [My_dup](https://github.com/danghai/C-projects-and-Data-Structure/blob/master/linux_programming_interface/file-IO/dup.c)
+### 5. [My_dup.c](https://github.com/danghai/C-projects-and-Data-Structure/blob/master/linux_programming_interface/file-IO/dup.c)
 
 dup.c: Implement dup(), dup2() using fcntl().
 

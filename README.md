@@ -1,3 +1,11 @@
+# C project and UNIX Program: 
+
+1. [File I/O Linux interface](https://github.com/danghai/C-projects-and-Data-Structure/tree/master/linux_programming_interface/file-IO)
+
+2. [Maze Solver](https://github.com/danghai/C-projects-and-Data-Structure/tree/master/maze-solver)
+
+3. [crc-asm](https://github.com/danghai/C-projects-and-Data-Structure/tree/master/crc-asm)
+
 # Data Structures and Algorithm: 
 C/C++ projects relate to concept of data abstraction and implementations of abstract data types. 
 The major structures include lists of several types, linear linked list, double linked list, stacks, queues, trees, binary search trees, 
@@ -17,12 +25,6 @@ hash table and others projects.
 
 [Dynamic Programming](https://github.com/danghai/C-projects-and-Data-Structure/tree/master/Dynamic_Programming)
 
-# C project and UNIX Program: 
 
-1. [File I/O Linux interface](https://github.com/danghai/C-projects-and-Data-Structure/tree/master/linux_programming_interface/file-IO)
-
-2. [Maze Solver](https://github.com/danghai/C-projects-and-Data-Structure/tree/master/maze-solver)
-
-3. [crc-asm](https://github.com/danghai/C-projects-and-Data-Structure/tree/master/crc-asm)
 
 
