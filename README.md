@@ -4,11 +4,15 @@
 
 2. [Process](https://github.com/danghai/C-projects-and-Data-Structure/tree/master/linux_programming_interface/process)
 
-3. [SHELL](https://github.com/danghai/shell) (Stimulate a simple shell) 
+3. [SHELL](https://github.com/danghai/shell) (Stimulate a simple shell)
 
-4. [Maze Solver](https://github.com/danghai/C-projects-and-Data-Structure/tree/master/maze-solver)
+4. [Directories and Links](https://github.com/danghai/C-projects-and-Data-Structure/tree/master/linux_programming_interface/directories_links)
 
-5. [crc-asm](https://github.com/danghai/C-projects-and-Data-Structure/tree/master/crc-asm)
+5. [Signal handlers](https://github.com/danghai/C-projects-and-Data-Structure/tree/master/linux_programming_interface/signal_handlers)
+
+6. [Maze Solver](https://github.com/danghai/C-projects-and-Data-Structure/tree/master/maze-solver)
+
+7. [crc-asm](https://github.com/danghai/C-projects-and-Data-Structure/tree/master/crc-asm)
 
 # Data Structures and Algorithm: 
 C/C++ projects relate to concept of data abstraction and implementations of abstract data types. 
