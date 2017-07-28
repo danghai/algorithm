@@ -20,6 +20,7 @@
 #include <stdio.h>
 #include <unistd.h>
 #include <signal.h>
+#include "signal_functions.h"
 
 int main(int argc, char * argv[])
 {

@@ -12,6 +12,7 @@
 #include <unistd.h>
 #include <signal.h>
 #include <time.h>
+#include "signal_functions.h"
 
 static int sigCnt[NSIG];    // counts deliveries of each signal
 static volatile sig_atomic_t gotSigint = 0;
@@ -60,6 +61,7 @@ int main(int argc, char * argv[])
       }
 
       printf("%s: pending signals are: \n", argv[0]);
+      printSigset(stdout, "\t\t", &pendingMask);
 
       sigemptyset(&emptyMask);    // Unblock all signals
       if(sigprocmask(SIG_SETMASK, &emptyMask, NULL) == -1)
