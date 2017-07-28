@@ -1,6 +1,14 @@
 /*
     Name: Hai Dang Hoang
     Email: goldsea5191@gmail.com
+
+    sig_receiver.c: This program catch and report statistic on signals
+    sent by the sig_sender.
+    The program sets up a single handler to catch all signals. For most
+    types of signals, the handler simply counts the signal using an array.
+    If SIGINT is received, the handler sets a flag(gotSigint) that causes
+    the program to exit its main Loop
+    After exiting the while loop, the program displays counts of all signals received
 */
 
 #include <sys/stat.h>

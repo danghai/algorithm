@@ -34,3 +34,34 @@ danghai@ubuntu:~$ ./intquit
 ^C  Caught SIGINT (3) !
 ^\  Caught SIGQUIT - that's all folks
 ```
+
+### 3. [sig_sender.c](https://github.com/danghai/C-projects-and-Data-Structure/blob/master/linux_programming_interface/signal_handlers/sig_sender.c) and [sig_receiver.c](https://github.com/danghai/C-projects-and-Data-Structure/blob/master/linux_programming_interface/signal_handlers/sig_receiver.c)
+
+The 2 programs `sig_sender.c` and `sig_receiver.c` show signals are not queued.
+We first use these two program to illustrate that a blocked signal is delivered
+only once, no matter how many times it is generated.
+
+Note: 2 terminals ( One for sig_receiver and one for sig_sender)
+
+```
+danghai@ubuntu:~$ ./sig_receiver: PID is 14204
+./sig_receiver: sleeping for 15 seconds
+./sig_receiver: pending signals are:
+		2 (Interrupt)
+		10 (User defined signal 1)
+./sig_receiver: signal 10 caught 1 time  
+```
+
+```
+danghai@ubuntu:~$ ./sig_sender 14204 10000 10 2
+./sig_sender: sending signal 10 to process 14204 : 10000 times
+```
+
+The command-line arguments to the sending program specified the `SIGUSR1` and `SIGINT`
+signals, which are signals 10 and 2, respectively, on Linux/x86. From the output above,
+we can see that even thourgh 10000 times signals were sent, only was delivered to the
+receiver. Even if a process does not block signals, it may receive fewer signals than are
+sent to it. This can happen if the signals are sent so fast that thtey arrive before
+the receiving process has a chance to be scheduled for execution by the kernel, with
+the result that the multiple signals are recorded just once in the process's pending
+signal set. 
