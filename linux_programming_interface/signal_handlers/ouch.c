@@ -13,6 +13,9 @@
 #include <unistd.h>
 #include <signal.h>
 #include <time.h>
+#include <sys/wait.h>
+#include <sys/types.h>
+
 
 static void sigHandler (int sig)
 {
