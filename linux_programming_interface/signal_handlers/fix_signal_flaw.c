@@ -2,14 +2,7 @@
     Name: Hai Dang Hoang
     Email: goldsea5191@gmail.com
 
-    signal_flaw.c: The program shows that signals cannot be used to
-    count the occurrence of events in other process. The parent installs
-    a SIGCHLD handler, and then creates some children, each of which runs for 1 second
-    and then terminates. In the meantime, the parent waits for a line of input from the
-    terminal and then processes it. This processing is modeled by an infinite loop. when
-    each child terminates, the kernel notifies the parent by sendin it a SIGCHLD signal.
-    The parent catches the SIGCHLD, reaps one child. However, only two of total singals were
-    received, and thus the parent only reaped two children. --> it remains some "zombie" child
+    fix_signal_flaw.c: The program fixed the zombie child from signal_flaw
 */
 #include <sys/stat.h>
 #include <fcntl.h>
@@ -27,14 +20,10 @@
 static void sigHandler(int sig)
 {
   pid_t pid;
-  pid = wait(NULL);     // Wait for children terimnal
-  if(pid == -1)
+  while((pid = wait(NULL)) > 0)     // Wait for children terimnal
   {
-      perror("Error wait \n");
-      exit(EXIT_FAILURE);
+        printf("Handler reaped child %d\n",(int) pid);
   }
-
-  printf("Handler reaped child %d\n",(int) pid);
   sleep(2);
   return;
 }

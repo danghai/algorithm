@@ -64,4 +64,17 @@ receiver. Even if a process does not block signals, it may receive fewer signals
 sent to it. This can happen if the signals are sent so fast that thtey arrive before
 the receiving process has a chance to be scheduled for execution by the kernel, with
 the result that the multiple signals are recorded just once in the process's pending
-signal set. 
+signal set.
+
+### 4.[signal_flaw](https://github.com/danghai/C-projects-and-Data-Structure/blob/master/linux_programming_interface/signal_handlers/signal_flaw.c) and [fix_signal_flaw](https://github.com/danghai/C-projects-and-Data-Structure/blob/master/linux_programming_interface/signal_handlers/fix_signal_flaw.c) 
+
+The program shows that signals cannot be used to
+count the occurrence of events in other process. The parent installs
+a SIGCHLD handler, and then creates some children, each of which runs for 1 second
+and then terminates. In the meantime, the parent waits for a line of input from the
+terminal and then processes it. This processing is modeled by an infinite loop. when
+each child terminates, the kernel notifies the parent by sendin it a SIGCHLD signal.
+The parent catches the SIGCHLD, reaps one child. However, only two of total singals were
+received, and thus the parent only reaped two children. --> it remains some "zombie" child
+
+
