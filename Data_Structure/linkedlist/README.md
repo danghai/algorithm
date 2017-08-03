@@ -28,6 +28,8 @@
 | 3 | [Remove Duplicates from Sorted List ](https://leetcode.com/problems/remove-duplicates-from-sorted-list/#/description) | [C++](https://github.com/danghai/C-projects-and-Data-Structure/blob/master/Data_Structure/linkedlist/removeKFromList/deleteDuplicates.md) | Easy |
 | 4 | [Remove Linked List Elements](https://leetcode.com/problems/remove-linked-list-elements/#/description) | [C++](https://github.com/danghai/C-projects-and-Data-Structure/blob/master/Data_Structure/linkedlist/removeKFromList/removeElements.md) | Easy |
 | 5 | [Reverse Linked List ](https://leetcode.com/problems/reverse-linked-list/#/description) | [C++](https://github.com/danghai/C-projects-and-Data-Structure/blob/master/Data_Structure/linkedlist/removeKFromList/ReverseLinkedlist.md) | Easy |
+| 6 | [Swap Node In Pai ](https://leetcode.com/problems/swap-nodes-in-pairs/description/) | [C++](https://github.com/danghai/C-projects-and-Data-Structure/blob/master/Data_Structure/linkedlist/removeKFromList/SwapNode.cpp) | Medium |
+
 
 
 
