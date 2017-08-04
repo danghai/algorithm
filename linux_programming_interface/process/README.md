@@ -38,11 +38,29 @@ we use the program:
 danghai@ubuntu:~$ ./multi_wait 4 2 10 8
 Child 4 startd with PID 8688, sleeping 8 seconds
 Child 3 startd with PID 8687, sleeping 10 seconds
-Child 2 startd with PID 8686, sleeping 2 seconds 
+Child 2 startd with PID 8686, sleeping 2 seconds
 Child 1 startd with PID 8685, sleeping 4 seconds
 wait() return child PID 8686 (numChild = 1)
 wait() return child PID 8685 (numChild = 2)
 wait() return child PID 8688 (numChild = 3)
 wait() return child PID 8687 (numChild = 4)
 No more children - bye!
+```
+
+### 3. [Make_zombie.c](https://github.com/danghai/C-projects-and-Data-Structure/blob/master/linux_programming_interface/process/make_zombie.c)
+
+The program demonstrates the creation of a zombie
+and that a zombie cannot killed by SIGKILL. It should be killed by
+kill their parent.
+
+```
+danghai@ubuntu:~$ ./make_zombie
+Parent PID = 2618
+Child (PID = 2619) exiting
+  2618 pts/17   00:00:00 make_zombie
+  2619 pts/17   00:00:00 make_zombie <defunct>
+After sending SIGKILL to zombie (PID = 2619):
+  2618 pts/17   00:00:00 make_zombie
+  2619 pts/17   00:00:00 make_zombie <defunct>
+Killed
 ```
