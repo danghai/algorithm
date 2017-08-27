@@ -13,5 +13,6 @@ multi_wait: multi_wait.c
 make_zombie: make_zombie.c
 		$(CC) $(FLAG) make_zombie make_zombie.c
 
+
 clean:
-			rm fork_file_sharing multi_wait make_zombie
+			rm fork_file_sharing multi_wait

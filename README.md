@@ -14,6 +14,12 @@
 
 7. [crc-asm](https://github.com/danghai/C-projects-and-Data-Structure/tree/master/crc-asm)
 
+# Learn Linux
+
+1. [Linux Command](http://linuxcommand.org/)
+
+2. [Learn Linux](https://linuxjourney.com/)
+
 # Data Structures and Algorithm: 
 C/C++ projects relate to concept of data abstraction and implementations of abstract data types. 
 The major structures include lists of several types, linear linked list, double linked list, stacks, queues, trees, binary search trees, 
@@ -28,6 +34,7 @@ hash table and others projects.
 3. [HashTable](https://github.com/danghai/C-projects-and-Data-Structure/tree/master/Data_Structure/hashTable)
 
 4. [Binary Search Tree](https://github.com/danghai/C-projects-and-Data-Structure/tree/master/Data_Structure/bstTree)
+
 
 # Dynamic Programming:
 
