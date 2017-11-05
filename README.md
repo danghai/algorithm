@@ -12,7 +12,7 @@
 
 6. [Maze Solver](https://github.com/danghai/C-projects-and-Data-Structure/tree/master/maze-solver)
 
-7. [crc-asm](https://github.com/danghai/C-projects-and-Data-Structure/tree/master/crc-asm)
+7. [crc-asm](https://github.com/danghai/C-projects-and-Data-Structure/tree/master/crc-asm).
 
 # Learn Linux
 
