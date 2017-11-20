@@ -10,9 +10,11 @@
 
 5. [Signal handlers](https://github.com/danghai/C-projects-and-Data-Structure/tree/master/linux_programming_interface/signal_handlers)
 
-6. [Maze Solver](https://github.com/danghai/C-projects-and-Data-Structure/tree/master/maze-solver)
+6. [Termios](https://github.com/danghai/C-projects-and-Data-Structure/tree/master/termios)
 
-7. [crc-asm](https://github.com/danghai/C-projects-and-Data-Structure/tree/master/crc-asm).
+7. [Maze Solver](https://github.com/danghai/C-projects-and-Data-Structure/tree/master/maze-solver)
+
+8. [crc-asm](https://github.com/danghai/C-projects-and-Data-Structure/tree/master/crc-asm).
 
 # Learn Linux
 
