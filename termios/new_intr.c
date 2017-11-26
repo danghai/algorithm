@@ -7,7 +7,7 @@
 *   Ascii: https://en.wikipedia.org/wiki/ASCII
 *   How to use:  ./new_intr 12 --> change intr = ^L
 *                stty          --> list information
-*                stty sane     --> return terminal to a sane state 
+*                stty sane     --> return terminal to a sane state
 */
 #include <termios.h>
 #include <ctype.h>
