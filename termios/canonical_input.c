@@ -14,7 +14,7 @@
 #define BAUDRATE B38400
 
 /* change this definition for the correct port */
-#define MODEMDEVICE "/dev/ttyS1"
+#define MODEMDEVICE "/dev/tty"
 #define _POSIX_SOURCE 1 /* POSIX compliant source */
 
 #define FALSE 0
