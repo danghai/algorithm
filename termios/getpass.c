@@ -1,3 +1,9 @@
+/*  getpass.c: Reads a password of some type from the user at a
+*   terminal. This function is called by the login(1) and crypt(1)
+*   programs. To read the password, the function must turn off echoing, but
+*   it can leave the terminal in canonical mode, as whatever we type
+*   as the password forms a complete line.
+*/
 #include <termios.h>
 #include <ctype.h>
 #include <unistd.h>
@@ -8,11 +14,11 @@
 
 char *getpass(const char *);
 
-#define MAX_PASS_LEN 8    /* Maximum character for user to enter */
+#define MAX_PASS_LEN 30    /* Maximum character for user to enter */
 
 char *
 getpass(const char *prompt){
-  static char buf[MAX_PASS_LEN + 1];   /* Null byte at end */
+  static char     buf[MAX_PASS_LEN + 1];   /* Null byte at end */
   char            *ptr;
   sigset_t        sig, osig;
   struct termios  ts, ots;
@@ -24,9 +30,9 @@ getpass(const char *prompt){
     perror("ctermid() error \n");
     return NULL;
   }
-  printf ("The control terminal is %s \n",termid);
+  printf ("The control terminal is: %s \n",termid);
 
-  if((fp = fopen(termid,"+r")) == NULL){
+  if((fp = fopen(termid,"r")) == NULL){
     perror ("fopen \n");
     return (NULL);
   }
@@ -34,12 +40,12 @@ getpass(const char *prompt){
   setbuf(fp, NULL);
 
   sigemptyset(&sig);
-  sigaddset(&sig, SIGINT);  /* block SIGINT */
-  sigaddset(&sig, SIGTSTP); /* block SIGTSTP */
-  sigprocmask(SIG_BLOCK, &sig, &osig); /* and save mask */
+  sigaddset(&sig, SIGINT);                /* block SIGINT */
+  sigaddset(&sig, SIGTSTP);               /* block SIGTSTP */
+  sigprocmask(SIG_BLOCK, &sig, &osig);    /* and save mask */
 
-  tcgetattr(fileno(fp), &ts);     /* save tty state */
-  ots = ts;                       /* structure copy */
+  tcgetattr(fileno(fp), &ts);             /* save tty state */
+  ots = ts;                               /* structure copy */
   ts.c_lflag &= ~(ECHO | ECHOE | ECHOK | ECHONL);
   tcsetattr(fileno(fp), TCSAFLUSH, &ts);
 
@@ -49,12 +55,12 @@ getpass(const char *prompt){
   while ((c = getc(fp)) != EOF && c != '\n')
       if (ptr < &buf[MAX_PASS_LEN])
           *ptr++ = c;
-  *ptr = 0;                  /* null terminate */
-  putc('\n', fp);            /* we echo a newline */
+  *ptr = 0;                                 /* null terminate */
+  putc('\n', fp);                           /* we echo a newline */
 
-  tcsetattr(fileno(fp), TCSAFLUSH, &ots); /* restore TTY state */
-  sigprocmask(SIG_SETMASK, &osig, NULL);  /* restore mask */
-  fclose(fp);         /* done with /dev/tty */
+  tcsetattr(fileno(fp), TCSAFLUSH, &ots);   /* restore TTY state */
+  sigprocmask(SIG_SETMASK, &osig, NULL);    /* restore mask */
+  fclose(fp);                               /* done with /dev/tty */
   return(buf);
 }
 

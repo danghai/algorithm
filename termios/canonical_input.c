@@ -1,3 +1,7 @@
+/*
+*     canonical_input.c: Read the /dev/tty in canonical mode
+*                        sending 'z' to terminate the program
+*/
 #include <sys/types.h>
 #include <sys/stat.h>
 #include <fcntl.h>
