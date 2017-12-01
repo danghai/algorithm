@@ -12,6 +12,8 @@
 
 6. [Termios](https://github.com/danghai/C-projects-and-Data-Structure/tree/master/termios)
 
+7. [Macros](https://github.com/danghai/C-projects-and-Data-Structure/tree/master/macros)
+
 7. [Maze Solver](https://github.com/danghai/C-projects-and-Data-Structure/tree/master/maze-solver)
 
 8. [crc-asm](https://github.com/danghai/C-projects-and-Data-Structure/tree/master/crc-asm).
