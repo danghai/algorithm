@@ -1,4 +1,4 @@
-# C project and [Linux Programming Interface](https://github.com/danghai/C-projects-and-Data-Structure/tree/master/linux_programming_interface): 
+# C project and Linux Programming Interface: 
 
 1. [File I/O Linux interface](https://github.com/danghai/C-projects-and-Data-Structure/tree/master/linux_programming_interface/file-IO)
 
@@ -18,8 +18,7 @@
 
 8. [crc-asm](https://github.com/danghai/C-projects-and-Data-Structure/tree/master/crc-asm).
 
-# Learn Linux
-
+# Learn Lin
 1. [Linux Command](http://linuxcommand.org/)
 
 2. [Learn Linux](https://linuxjourney.com/)
